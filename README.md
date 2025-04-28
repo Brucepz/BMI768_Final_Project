@@ -32,9 +32,14 @@ Chung, M.K., Dalton, K.M., Shen, L. (2019). Exact Topological Inference for Pair
         subject_YYYY_H1_PD.mat
 /scripts/
     spharm_smoothing.m
-    compute_persistence.m
+    calculate_all_PD.m
     wasserstein_distance.m
     permutation_test_PD_transposition_func.m
+    pairing_mesh_H0.m
+    pairing_mesh_H1.m
+    spharm_smoothing.m
+    union_find.m
+    read_civet_simple_obj.m
     utils/
         load_PD.m
         topK_PD.m
