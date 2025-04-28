@@ -20,7 +20,7 @@ subjs = {d(isub).name};
 for i = 1:numel(subjs)
     sid = subjs{i};
     sp  = fullfile(root_folder, sid);
-    fprintf('\n===== Processing subject %s =====\n', sid);
+    fprintf('\Processing subject %s', sid);
 
     try
         %% read CIVET Obj & Thickness
