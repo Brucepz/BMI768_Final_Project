@@ -14,10 +14,10 @@ find = @(x) recursive_find(x, uf);  % helper
 
 % Build edge list from faces
 edges = [F(:,[1 2]); F(:,[2 3]); F(:,[1 3])];
-edges = sort(edges, 2);  % sort each edge
-edges = unique(edges, 'rows');  % remove duplicate edges
+edges = sort(edges, 2);  
+edges = unique(edges, 'rows'); 
 
-% Sort vertices by function value (ascending)
+% Sort vertices by function value
 [~, idx] = sort(T);
 Birth = [];
 Death = [];
@@ -45,7 +45,7 @@ end
 
 function r = recursive_find(x, uf)
     if uf(x) ~= x
-        uf(x) = recursive_find(uf(x), uf);  % path compression
+        uf(x) = recursive_find(uf(x), uf); 
     end
     r = uf(x);
 end
