@@ -59,7 +59,7 @@ Chung, M.K., Dalton, K.M., Shen, L. (2019). Exact Topological Inference for Pair
 ## Key Functions
 spharm_smoothing.m — Apply SPHARM smoothing to cortical thickness maps.
 
-compute_persistence.m — Compute $H_1$ persistence diagrams from triangulated meshes.
+calculate_all_PD.m — Compute $H_0$ and $H_1$ persistence diagrams from triangulated meshes.
 
 wasserstein_distance.m — Compute pairwise $p$-Wasserstein distances between persistence diagrams.
 
