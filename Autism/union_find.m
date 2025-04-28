@@ -5,7 +5,7 @@ function uf = union_find(n)
 
     function r = find(x)
         while uf.parent(x) ~= x
-            uf.parent(x) = uf.parent(uf.parent(x));  % path compression
+            uf.parent(x) = uf.parent(uf.parent(x));  
             x = uf.parent(x);
         end
         r = x;
