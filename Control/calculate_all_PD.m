@@ -1,6 +1,6 @@
 function calculate_all_PD(root_folder)
 % calculate_all_PD  figure out all control subject：
-%   1) 读 obj + thickness
+%   1) read obj + thickness
 %   2) SPHARM smoothing
 %   3) combine left and right
 %   4) compute H0/H1 Persistence Diagram
