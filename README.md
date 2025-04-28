@@ -69,8 +69,8 @@ Statistics and Machine Learning Toolbox
 Parallel Computing Toolbox (optional but recommended for speedup)
 
 ## How to Run
-Prepare cortical thickness persistence diagrams in /Dataset/Autism/ and /Dataset/Control/.
-
+Run the calculate_all_PD.m in the Autism and Control folder. It will compute all the persistence diagrams of H0 and H1 for each subject.
+Then, run the permutation_test_PD_transposition_func.m. It will compute the permutation test.
 Set parameters K, p, and Nperm in permutation_test_PD_transposition_func.m.
 
 Run the permutation test script in MATLAB:
