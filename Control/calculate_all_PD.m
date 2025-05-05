@@ -40,7 +40,7 @@ for i = 1:numel(subjs)
         V_Ru = V_R ./ vecnorm(V_R,2,2);
         muL = mean(T_L); sL = std(T_L); T_Ln = (T_L-muL)/sL;
         muR = mean(T_R); sR = std(T_R); T_Rn = (T_R-muR)/sR;
-        L     = 10; sigma = 0.03;
+        L     = 10; sigma = 0.01;
         T_Ls = spharm_smoothing(V_Lu, T_Ln, L, sigma) * sL + muL;
         T_Rs = spharm_smoothing(V_Ru, T_Rn, L, sigma) * sR + muR;
 
